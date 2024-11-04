@@ -1,0 +1,167 @@
+:root {
+    --main-brand-color: rgb(102, 252, 241);
+    --primary-color: rgb(31, 40, 51);
+    --secondary-color: rgb(62, 67, 85);
+    --text-color: white;
+}
+
+
+/*-------------Allgemeine Selektoren-------------*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    box-sizing: border-box;
+}
+
+a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none
+}
+
+
+body {
+    background-color: var(--primary-color);
+    margin: 0;
+    min-height: 100vh;
+    width: 100%;
+}
+
+@media(max-width: 800px) {
+
+    /*-------Header-------*/
+
+
+    nav .nav-elements-right ul{
+        display: none;
+        position: absolute;
+        top:100%;
+        right:0;
+        text-align: right;
+        flex-direction: column;
+    }
+
+
+    nav label[for="toggle-button"]{
+        display: flex;
+        justify-content: flex-end;
+        z-index: 2;
+    }
+
+    .nav_element li:first-child{
+        margin-top: 100px;
+    }
+    .nav_element li:last-child{
+        margin-top: 70px;
+        display: flex;
+    }
+
+    #toggle-button:checked ~ .nav_element, #toggle-button:checked ~ div {
+        display: flex;
+        background: var(--secondary-color);
+        width: 220px;
+        height: 350px;
+        z-index: 1;
+        top: 0px;
+        right: 0px;
+        gap: 20px;
+        border:3px solid var(--main-brand-color);
+        border-radius: 10px;
+
+    }
+
+    .wrapper {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        min-width: none;
+    }
+
+    .wrapper .static-txt li {
+        font-size: 10vw;
+        position: relative;
+    }
+
+    .wrapper .dynamic-txts li {
+        font-size: 10vw;
+        position: relative;
+        text-align: center;
+    }
+
+    /*-------Vorstellung-------*/
+
+    .section-boxes {
+        max-height: auto;
+        width: 100%;
+    }
+
+    #contact-start {
+        flex-wrap: wrap;
+        justify-content: center;
+        display: flex;
+    }
+
+    #contact-start .box-application-image {
+        width: 100vw;
+        height: auto;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact-start .box-application-image .application-image {
+        width: 30%;
+        height: auto;
+        margin: 0;
+        display: flex;
+    }
+
+    #contact-start .contact-start-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contact-start .contact-start-text h2 {
+        font-size: 35px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .btn {
+        width: 200px;
+        height: 50px;
+        background-color: rgb(24, 90, 110);
+        border-radius: 10px;
+        position: relative;
+    }
+
+}
+
+/*-------------Hilfsklassen-------------*/
+
+.section-boxes {
+    background-color: var(--secondary-color);
+    width: 90%;
+    min-height: 500px;
+    max-height: auto;
+    margin: 10px auto;
+    padding: 25px;
+    border-radius: 10px;
+    position: relative;
+    z-index: -1;
+}
+
+.btn {
+    width: 200px;
+    height: 50px;
+    background-color: rgb(24, 90, 110);
+    border-radius: 10px;
+    position: absolute;
+    text-align: center;
+    padding: 15px 0;
+    text-decoration: none;
+}
