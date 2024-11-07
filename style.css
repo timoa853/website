@@ -28,15 +28,18 @@ background: rgb(18, 70, 78);
 /*------Type Animation------*/
 .wrapper{
     display: flex;
+    flex-direction: column;
+
 }
 
 
 
 .wrapper .static-txt{
     color: white;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 400;
     z-index: -1;
+    text-align: center;
     
 }
 
@@ -46,7 +49,9 @@ background: rgb(18, 70, 78);
     margin-top: 0;
     line-height: 70px;
     height: 70px;
-    overflow: hidden
+    overflow: hidden;
+    text-align: center;
+    gap: 5px;
 }
 
 
@@ -141,10 +146,18 @@ background: rgb(18, 70, 78);
 /*-------------Vorstellung-------------*/
 
 
-#contact-start .box-application-image {
-    width: 15%;
-    margin: 0;
 
+#contact-start{
+    display: flex;
+    gap: 5%;
+}
+
+#contact-start .box-application-image {
+    width: 185px;
+    height: 250px;
+    max-width: 80vw;
+    max-height: 80vw;
+    margin: 0;
 }
 
 #contact-start .box-application-image .application-image {
@@ -178,37 +191,64 @@ background: rgb(18, 70, 78);
 
 #skill-set .skill-label{
     margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
 }
 
 #skill-set .skill-collection-one{
     width: 50%;
+    display: flex;
+    flex-direction: column;
+}
 
+#skill-set .skill-collection-one .one{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 #skill-set .skill-collection-one .one-picture{
-    width: fit-content;
+    width: 75px;
     text-align: center;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 #skill-set .skill-collection-one .one-picture p{
-    margin-top: 4px;
+    margin: 0;
 }
 
 
 #skill-set .skill-collection-two{
     width: 50%;
+    display: flex;
+    flex-direction: column;
+}
 
+#skill-set .skill-collection-two .two{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 #skill-set .skill-collection-two .two-picture{
-    width: fit-content;
+    width: 75px;
     text-align: center;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 #skill-set .skill-collection-two .two-picture p{
-    margin-top: 4px;
+    margin: 0;
 }
 
 /*--Progressboxen--*/
@@ -216,7 +256,7 @@ background: rgb(18, 70, 78);
 #skill-set .skill-collection-one .one .progressbar-box{
     width: 80%;
 
-    margin-top: 20px;
+
 }
 
 #skill-set .skill-collection-two .two .progressbar-box{
