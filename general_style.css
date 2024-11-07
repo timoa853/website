@@ -79,13 +79,9 @@ body {
         min-width: none;
     }
 
-    .wrapper .static-txt li {
-        font-size: 10vw;
-        position: relative;
-    }
 
     .wrapper .dynamic-txts li {
-        font-size: 10vw;
+        font-size: 7vw;
         position: relative;
         text-align: center;
     }
@@ -138,6 +134,15 @@ body {
         border-radius: 10px;
         position: relative;
     }
+
+    /*-------Skillset-------*/
+    #skill-set .skill-label{
+        flex-direction: column;
+
+    }
+
+
+
 
 }
 
