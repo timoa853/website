@@ -1,12 +1,11 @@
 /*-------------Navigationsleite-------------*/
 
-/* Hier bitte noch Sandwich-Menu hinzufügen!!!!!!!! */
 header {
     position: sticky;
     top: 0;
     width: 100%;
     background-image: linear-gradient(rgb(102, 252, 241, 0.3), rgba(31, 40, 51, 1)),
-        url(img/header/matrix_header.png);
+        url(/img/header/matrix_header.png);
 }
 
 
@@ -16,6 +15,7 @@ header nav {
     display: flex;
     align-items:flex-end;
     justify-content: space-between;
+    margin: 0 auto;
 }
 
 
@@ -32,7 +32,6 @@ header nav {
     height: 90px;
 
 }
-
 
 .nav_element {
     width: 171px;
@@ -59,8 +58,6 @@ header nav {
 .nav_element li:last-child{
     display: none;
 }
-
-
 
 .nav_element span{
     color: var(--main-brand-color);
