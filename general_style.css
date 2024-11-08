@@ -13,6 +13,13 @@
     box-sizing: border-box;
 }
 
+h1{
+    color: var(--main-brand-color);
+    position: absolute;
+    top: 10%;
+    font-size: 60px;
+}
+
 a {
     display: block;
     height: 100%;
@@ -127,24 +134,46 @@ body {
         text-align: center;
     }
 
-    .btn {
-        width: 200px;
-        height: 50px;
-        background-color: rgb(24, 90, 110);
-        border-radius: 10px;
-        position: relative;
-    }
+
 
     /*-------Skillset-------*/
-    #skill-set .skill-label{
-        flex-direction: column;
 
+    #skill-set .skill-collection-one{
+        flex-direction: column;
+        justify-content: center;
     }
 
 
+    #skill-set .skill-collection-one .one{
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
 
+    #skill-set .skill-label{
+        flex-direction: column;
+    }
+
+    
+    #skill-set .skill-collection-two{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #skill-set .skill-collection-two .two{
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .section-boxes-end {
+        min-width: 90vw;
+    
+    }
+    
 
 }
+
+
 
 /*-------------Hilfsklassen-------------*/
 
@@ -152,7 +181,7 @@ body {
     background-color: var(--secondary-color);
     width: 90%;
     min-height: 500px;
-    max-height: auto;
+    max-height: max-content;
     margin: 10px auto;
     padding: 25px;
     border-radius: 10px;
@@ -163,9 +192,9 @@ body {
 .btn {
     width: 200px;
     height: 50px;
-    background-color: rgb(24, 90, 110);
+    background-color: var(--primary-color);
     border-radius: 10px;
-    position: absolute;
+    position: relative;
     text-align: center;
     padding: 15px 0;
     text-decoration: none;
