@@ -5,7 +5,7 @@ header {
     top: 0;
     width: 100%;
     background-image: linear-gradient(rgb(102, 252, 241, 0.3), rgba(31, 40, 51, 1)),
-        url(/img/header/matrix_header.png);
+        url(img/header/matrix_header.png);
 }
 
 
