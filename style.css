@@ -288,6 +288,13 @@ background: rgb(18, 70, 78);
     border-radius: 10px;
 }
 
+#skill-set .progressbar-box .progressbar .python{
+    background-color: rgb(102, 252, 241);
+    width: 10%;
+    height: 20px;
+    border-radius: 10px;
+}
+
 
 
 
